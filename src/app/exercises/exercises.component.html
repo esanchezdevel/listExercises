@@ -1,4 +1,13 @@
 <h2>{{exercise.name | uppercase}}</h2>
 
 <div><span>id:</span>{{exercise.id}}</div>
-<div><span>name:</span>{{exercise.name}}</div>
+<div>
+  <label>
+    Name:
+    <!-- with this ngModel we can change dynamically the value of the parameter "name"
+        in the object exercise. And you can see how the title change whith the text that you write in
+        the form input -->
+    <input [(ngModel)]="exercise.name" placeholder="name">
+  </label><br>
+  <span>Name:</span>{{exercise.name}}
+</div>
