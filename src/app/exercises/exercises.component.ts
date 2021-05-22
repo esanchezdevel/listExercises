@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { exercise } from '../exercise'; //import the exercise.ts
 
 @Component({
   selector: 'app-exercises',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExercisesComponent implements OnInit {
 
-  exercise = 'Push-up'
+  //Property exercise using the object exercise.ts
+  exercise: exercise={
+    id:1,
+    name:'Push-up'
+  };
 
   constructor() { }
 
