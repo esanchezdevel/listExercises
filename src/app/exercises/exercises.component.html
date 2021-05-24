@@ -10,7 +10,7 @@
 <h3>List with links that execute specific method</h3>
 -->
 <ul class="exercises">
-  <li *ngFor='let exercise of exercises' (click)="onSelectExercise(exercise)">
+  <li *ngFor='let exercise of exercises' (click)="onSelectExercise(exercise)" [class.selected]="exercise===exerciseSelected">
     <span class="badge">{{exercise.id}}</span>{{exercise.name}}
   </li>
 </ul>
