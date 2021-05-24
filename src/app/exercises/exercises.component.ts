@@ -17,4 +17,8 @@ export class ExercisesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  onSelectExercise(exercise:exercise): void {
+    console.log("onSelectExercise executed...");
+  }
+
 }
