@@ -1,16 +1,17 @@
 <h2>List of Exercises</h2>
 
+<!--
 <h3>List without any behaviour</h3>
 <ul class="exercises">
-  <!-- for through all the list of exercises -->
   <li *ngFor='let exercise of exercises'>
     <span class="exercise">{{exercise.id}}</span>{{exercise.name}}
   </li>
 </ul>
 <h3>List with links that execute specific method</h3>
-<ul>
+-->
+<ul class="exercises">
   <li *ngFor='let exercise of exercises' (click)="onSelectExercise(exercise)">
-    <span class="exercise">{{exercise.id}}</span>{{exercise.name}}
+    <span class="badge">{{exercise.id}}</span>{{exercise.name}}
   </li>
 </ul>
 
