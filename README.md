@@ -31,3 +31,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Start application: ng serve
 Create component: ng generate component exercises
+Create service:   ng generate service exercise
