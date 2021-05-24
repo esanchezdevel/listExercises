@@ -8,6 +8,10 @@ import { Exercise } from '../exercise';
 })
 export class ExerciseDetailComponent implements OnInit {
 
+  /*
+    Declare the variable exercise that this component will receive
+    via Input from exercise component.
+  */
   @Input() exercise:Exercise;
 
   constructor() {
