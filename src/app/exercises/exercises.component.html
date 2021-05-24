@@ -15,10 +15,4 @@
   </li>
 </ul>
 
-<!-- with ngIf we can show an element only if it's initialized -->
-<div *ngIf="exerciseSelected.id">
-  <h2>Details</h2>
-  <div>
-    <span>id: </span>{{exerciseSelected.id}}
-  </div>
-</div>
+<app-exercise-detail [exercise]="exerciseSelected"></app-exercise-detail>
