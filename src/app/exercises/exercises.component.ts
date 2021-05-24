@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { exercise } from '../exercise'; //import the exercise.ts
+import { Exercise } from '../exercise'; //import the exercise.ts
 import { EXERCISES } from '../collection-exercises';
 
 @Component({
@@ -11,14 +11,19 @@ export class ExercisesComponent implements OnInit {
 
   //Property exercise using the object exercise.ts
   exercises=EXERCISES;
+  exerciseSelected:Exercise;
 
-  constructor() { }
+  constructor() {
+    //Initialize the exerciseSelected variable for avoid error
+    this.exerciseSelected = {id: NaN, name: ""};
+  }
 
   ngOnInit(): void {
   }
 
-  onSelectExercise(exercise:exercise): void {
-    console.log("onSelectExercise executed...");
+  onSelectExercise(exercise:Exercise): void {
+    console.log("selected exercise: " + exercise.id);
+    this.exerciseSelected=exercise;
   }
 
 }

@@ -1,7 +1,7 @@
-import { exercise } from './exercise';
+import { Exercise } from './exercise';
 
 //create a list with the exercises
-export const EXERCISES: exercise[]=[
+export const EXERCISES: Exercise[]=[
   {id:1, name:'Push-up'},
   {id:2, name:'Squats'},
   {id:3, name:'Curl biceps'},

@@ -13,3 +13,11 @@
     <span class="exercise">{{exercise.id}}</span>{{exercise.name}}
   </li>
 </ul>
+
+<!-- with ngIf we can show an element only if it's initialized -->
+<div *ngIf="exerciseSelected.id">
+  <h2>Details</h2>
+  <div>
+    <span>id: </span>{{exerciseSelected.id}}
+  </div>
+</div>
