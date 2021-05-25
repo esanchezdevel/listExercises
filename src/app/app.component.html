@@ -1,6 +1,21 @@
 <!-- print variable defined in app.components.ts file -->
 <h1>{{title}}</h1>
 
+<nav>
+  <a routerLink="/exercises">Exercises</a>
+</nav>
 <!-- print the template of the component exercises using the "selector" name
      defined in the exercises.component.ts -->
-<app-exercises></app-exercises>
+<!--<app-exercises></app-exercises>-->
+
+<!--
+    With the tag router-outlet we indicate that the content charged by the links will be
+    showed in that part of the page.
+    for instance: when click the link <a routerLink="/exercises">Exercises</a>
+    we will show the list of exercises when we have the tag <router-outlet></router-outlet>
+    Before click, we will not see anything.
+
+    Notice that in the link we use the property routerLink instead of the typical href, this is
+    mandatory for make the router-outlet works.
+ -->
+<router-outlet></router-outlet>
